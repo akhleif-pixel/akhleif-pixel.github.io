@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayham Khleif — The Power of Choice</title>
+  <meta name="description" content="Art by Ayham Khleif. Walk through the exhibition “The Power of Choice: Growth, Resistance, and Destruction” in 3D.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
+  <script type="importmap">
+    { "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body>
+
+<div class="masthead">
+  <!-- Same bar as the portfolio pages (tools/build_site.py) -->
+  <header class="top">
+    <a class="top__name" href="index.html">Ayham Khleif</a>
+    <nav class="top__nav" aria-label="Main"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="exhibition.html" aria-current="page">Art</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <nav class="subnav" aria-label="Exhibition">
+    <a class="subnav__title" href="#top">The Power <em>of Choice</em></a>
+    <span class="subnav__links">
+      <a href="#works">Works</a>
+      <a href="#exhibition">Exhibition</a>
+      <a href="#rationale">Rationale</a>
+      <a href="#about">About</a>
+      <button class="subnav__tour" data-open-tour>3D tour</button>
+    </span>
+  </nav>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__half hero__half--dark" aria-hidden="true"></div>
+    <div class="hero__half hero__half--light" aria-hidden="true"></div>
+    <svg class="hero__thread" viewBox="0 0 1000 200" preserveAspectRatio="none" aria-hidden="true">
+      <polyline points="0,120 560,120 590,120 610,60 632,180 655,20 678,150 700,120 1000,128" />
+    </svg>
+    <div class="hero__content">
+      <div class="hero__text">
+        <p class="eyebrow">Ayham Khleif · IB Visual Arts Exhibition</p>
+        <h1>The Power <span>of Choice</span></h1>
+        <p class="hero__sub">Growth, Resistance, and Destruction</p>
+      </div>
+      <div class="hero__actions">
+        <button class="btn btn--red" data-open-tour>Take the 3D tour</button>
+        <a class="btn btn--dark btn--outlined" href="#works">See the works</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="works">
+    <div class="section__head">
+      <h2>Works</h2>
+      <p>Nine pieces, in the order you meet them in the exhibition. Select one to read its story.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="section section--dark" id="exhibition">
+    <div class="section__head">
+      <h2>The exhibition</h2>
+      <p>Two diagonal walls, one black and one white, meet behind <em>Dichotomy</em>. Destruction is arranged to the left, growth to the right, and a fence on the floor makes stepping in an effort. Walk through it yourself.</p>
+    </div>
+    <div class="exhibit">
+      <button class="exhibit__main" data-open-tour aria-label="Take the 3D tour of the exhibition">
+        <img src="assets/img/exhibition-2.jpg" alt="The exhibition: a black wall and a white wall meeting at an angle, with works on the walls and on the floor" loading="lazy">
+        <span class="exhibit__cta"><span class="exhibit__dot"></span>Enter the 3D tour</span>
+      </button>
+      <figure class="exhibit__side">
+        <img src="assets/img/exhibition-1.jpg" alt="The exhibition seen from the left" loading="lazy" data-zoom="assets/img/exhibition-1.jpg">
+        <figcaption>The exhibition as it was installed.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="rationale">
+    <div class="section__head">
+      <h2>Curatorial rationale</h2>
+      <p>The Power of Choice: Growth, Resistance, and Destruction</p>
+    </div>
+    <div class="prose">
+      <p>My exhibition is an exploration of the tension between destruction and regeneration, resistance and resilience. I was born and raised in Palestine. Although this tiny part of the world has been destined to suffer throughout history, I saw my people surviving and finding strength amidst destruction. They always lose what they once loved but hope never leaves their sides. My work is deeply personal and a reflection of lived experiences and historical and social narratives. My work was inspired by many Palestinian artists such as Khaled Hourani, whose “Watermelon Flag” reclaims identity through color and symbolism. As well as other artists whose stark works reveal the human cost of conflict, such as the photographer Sebastião Salgado. My choice of media and material is essential to conveying the artist’s struggle — bringing heavy rocks from a nearby river, scratching plexiglass with a nail, and hammering countless nails into place. I believe in the necessity that my creation is from what is available, as an admiration of the resilience shown by those who continue to create despite adversity.</p>
+
+      <h3>Walking through the exhibition</h3>
+      <p>My exhibition is structured to be welcoming and challenging. When looking at the exhibition from a distance the entire exhibition is visible, symbolizing our ability to see what is happening around us, yet often choose to remain detached. The diagonal walls create an inviting atmosphere. However, when the viewer steps in, movement gets more difficult. Navigation is disrupted by the fence on the floor, reflecting the efforts required to engage with the themes explored. Moreover, A Love Story acts like another obstacle/burden on the way, forcing the viewers to focus on its bothersome existence and ignore its story, symbolizing the dehumanized reality of this scene. The curatorial text placement far inside the exhibition further highlights the idea that truth is not within reach and viewers must make the active choice to engage with the narrative presented.</p>
+      <p>Upon entering the exhibition, the audience is met with “Dichotomy”, which introduces the first conflict humans encounter on this earth, dividing the exhibition into two halves. The white and black background reinforce this division. From the center, the works are arranged towards growth on the right side and towards destruction on the left side. Then the viewer is confronted with a choice — a simple binary that grows more complex as they navigate other pieces. “Choose Wisely” presents the duality of peace and war, illustrating that both paths are not distinct, but do intersect.</p>
+      <p>The first set of works highlights destruction and loss. Look Away, which can’t be easily noticed, illustrates the immediate aftermath of war, forcing the viewer into an uncomfortable feeling of devastation. The other three pieces in this set represent different types of loss. A Love Story symbolizes a broken future without love; Belonging shows a child whose life merged into destruction and his innocence was stolen; A Delicious Dream gives attention to the lost dreams and ambitions. They all come together to show that death is not the only way to end someone’s life.</p>
+      <p>Navigating to the right side, the works take on the themes of resilience and rebirth. This set of works explores the ways in which strength is obtained. Endless Struggles, Endless Strength explores the past generations’ sacrifices that sustain future ones. The Fruit of Resistance is a result of resisting injustice. It symbolizes the strength gained from patience and faith.</p>
+      <p>Elements of youth and growth are present on both sides. They are a reminder that renewal is always a possibility even in destruction. The exhibition is structured on a spectrum of order and chaos, with The Fruit of Resistance and Look Away at each end.</p>
+
+      <h3>What I hope to achieve</h3>
+      <p>My exhibition is an invitation to reflect on the dichotomy of our world. A world that presents us with binaries that are never truly separated. After navigating my exhibition, the viewer should conclude that destruction and growth, resistance and survival, are not mutually exclusive. Through my work, I hope to evoke empathy, challenge perceptions, and ultimately leave the audience with a meaningful interpretation of the complexities of resilience.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="about">
+    <div class="section__head">
+      <h2>About</h2>
+    </div>
+    <div class="prose prose--light">
+      <p>I’m Ayham Khleif, an artist born and raised in Palestine. I make work from what is available: river rocks, nails and thread, scratched plexiglass, soil. <em>The Power of Choice</em> was my IB Visual Arts exhibition.</p>
+      <p><a class="link" href="https://www.instagram.com/ayhamk.h/" target="_blank" rel="noopener">Follow my work on Instagram — @ayhamk.h</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> Ayham Khleif</span>
+  <span class="foot__links"><a href="mailto:akhleif@u.rochester.edu">Email</a><a href="https://www.linkedin.com/in/ayham-khleif-0365772a6" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/akhleif-pixel" target="_blank" rel="noopener">GitHub</a><a href="https://www.instagram.com/ayhamk.h/" target="_blank" rel="noopener">Instagram</a></span>
+</footer>
+
+<!-- Piece detail (opened from the works grid) -->
+<dialog class="modal" id="pieceModal" aria-labelledby="pieceModalTitle">
+  <button class="iconbtn modal__close" data-close aria-label="Close">✕</button>
+  <div class="modal__body" id="pieceModalBody"></div>
+</dialog>
+
+<!-- Full-size image viewer -->
+<dialog class="lightbox" id="lightbox">
+  <button class="iconbtn lightbox__close" data-close aria-label="Close">✕</button>
+  <button class="iconbtn lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous photo">←</button>
+  <img id="lightboxImg" alt="">
+  <button class="iconbtn lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next photo">→</button>
+</dialog>
+
+<!-- 3D tour -->
+<div class="tour" id="tour" hidden>
+  <div class="tour__stage" id="tourStage">
+    <canvas id="tourCanvas"></canvas>
+    <div class="tour__spots" id="tourSpots"></div>
+    <div class="tour__top">
+      <button class="btn btn--small" id="tourExit">← Exit tour</button>
+      <button class="btn btn--small" id="tourOverview">Whole exhibition</button>
+    </div>
+    <p class="tour__hint" id="tourHint">Drag to look around · scroll to zoom · select a piece to see its photos</p>
+    <div class="tour__loading" id="tourLoading">Setting up the exhibition…</div>
+  </div>
+  <aside class="tour__panel" id="tourPanel" aria-live="polite"></aside>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
