@@ -29,8 +29,9 @@ em { font-family: var(--serif); }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 
 /* ---------- masthead: the portfolio's bar, then the exhibition's own ---------- */
-html { scroll-padding-top: 124px; }
-.masthead { position: sticky; top: 0; z-index: 30; }
+html { scroll-padding-top: 68px; }
+/* Only the exhibition's own bar follows the page; the portfolio bar scrolls away. */
+.masthead { display: contents; }
 .top, .foot {
   --line: #e4e6eb; --bar-muted: #5b6270; --bar-ink: #101318; --soft: #f5f6f8;
   --accent: #2f4fd8; --accent-soft: #eaeeff;
@@ -50,6 +51,7 @@ html { scroll-padding-top: 124px; }
 .top__nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
 
 .subnav {
+  position: sticky; top: 0; z-index: 30;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   padding: 10px max(20px, calc((100% - 1120px) / 2));
   background: var(--ink); color: var(--paper); border-bottom: 2px solid var(--red);
@@ -75,7 +77,7 @@ html { scroll-padding-top: 124px; }
   .top__nav { width: 100%; margin-left: -12px; }
   .subnav__title { display: none; }
   .subnav__links { width: 100%; justify-content: space-between; }
-  html { scroll-padding-top: 150px; }
+  html { scroll-padding-top: 64px; }
 }
 
 /* ---------- hero ---------- */
